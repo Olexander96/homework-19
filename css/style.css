@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.open_button, .close_button, .move-color_button {
+    color: #fff;
+    padding: 10px;
+    background-color: slategray;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.open_button-active {
+    display: none;
+}
+.modal_window {
+    display: none;
+    max-width: 300px;
+    background-color: rgb(143, 224, 224);
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.modal_window-active {
+    display: block;
+}
+
+.third-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.traffic-lights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: silver;
+    padding: 10px;
+    margin-right: 25px;
+}
+
+.traffic-lights div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.traffic-lights div:not(:last-child) {
+    margin-bottom: 10px;
+}
+.first-color, .second-color, .third-color {
+    background-color: #fff;
+}
+.first-color-active {
+    background-color: red;
+}
+.second-color-active {
+    background-color: yellow;
+}
+.third-color-active {
+    background-color: green;
+}
